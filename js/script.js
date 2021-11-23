@@ -14,7 +14,7 @@ const container = document.querySelector("div.container");
 for (let i = 1; i <= 100; i++) {
     //stampo in console
     //console.log(i);
-    const element = `<div class="box${i}">${i}</div>`;
+    /* const element = `<div class="box${i}">${i}</div>`; */
     const div = document.createElement("div");
     div.classList.add("box")
     div.append(i);
@@ -32,7 +32,10 @@ for (let i = 1; i <= 100; i++) {
         div.innerHTML = 'buzz';
         div.classList.add("orange");
         
-    }
-    
+    } if (i % 3 == 0 && i % 5 == 0) { // multipli di 3 e 5
+        div.innerHTML = 'fizzbuzz';
+        div.classList.add("red");
+        //console.log(i);
+    }    
 }
 
