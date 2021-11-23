@@ -19,6 +19,7 @@ for (let i = 1; i <= 100; i++) {
     div.classList.add("box")
     div.append(i);
     container.append(div);
+
     //console.log(div);
 
     //multipli di 3
@@ -30,10 +31,8 @@ for (let i = 1; i <= 100; i++) {
         //console.log(i);
         div.innerHTML = 'buzz';
         div.classList.add("orange");
-        div.innerHTML = 'fizzbuzz';
-        div.classList.add("green", "orange");
         
     }
+    
 }
-
 
